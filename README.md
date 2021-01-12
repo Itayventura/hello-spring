@@ -1,6 +1,6 @@
 # Hello World Spring Boot Application
 
-## how to create this application
+## how to start this application with spring initializr
 
 1. navigate to start.spring.io
 2. choose Maven project
@@ -16,7 +16,17 @@
 12. choose Java 11 as your language
 13. under src/main/resources create a file index.html 
 14. add the same content as in this project
-15. run the project
+
+## how to start this application with Intellij IDE
+
+1. verify that Spring boot plugin is enabled. if not, go to https://plugins.jetbrains.com/plugin/10229-spring-assistant and install it in your IDE
+2. go to Project and start new project.
+3. choose Spring assistant
+4. select Java 11 as SDK, the default for spring initializr and hit next
+5. fill in project properties, same as above and hit next
+6. in the dependency section, from web select Spring Web, and from Template Engines select Thymeleaf
+7. create index.html under src/main/resources as mentioned above.
+8. you're ready to go
 
 ## how to run the application
 1. run the project via command line/ IDE
