@@ -28,8 +28,9 @@
 7. create index.html under src/main/resources as mentioned above.
 8. you're ready to go
 
-## how to run the application
-1. run the project via command line/ IDE
-2. go to your web browser to localhost:8080
+## how to run the application from the command line
+1. run <code>mvn clean package</code> command
+2. Run <code>java -jar target/learning-spring-2.4.1.jar</code> Whereas learning-spring is the name of your project, and 2.4.1 is the version of the spring boot. 
+3. go to your web browser to localhost:8080
 
  
