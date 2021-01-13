@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (c) 2021. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Landon Hotel: Room Reservations</title>
+</head>
+<body>
+<h1>Welcome to Room Reservations Page</h1>
+<table>
+    <tr>
+        <td>Room</td>
+        <td>Room Number</td>
+        <td>Guest</td>
+    </tr>
+    <tr th:each="roomReservation: ${roomReservations}">
+        <td th:text="${roomReservation.roomName}">Room Name</td>
+        <td th:text="${roomReservation.roomNumber}">Room Number</td>
+        <td th:text="${roomReservation.lastName}!=null?${roomReservation.lastName} + ', ' + ${roomReservation.firstName} : 'VACANT'">Full Name</td>
+
+    </tr>
+</table>
+</body>
+</html>
